@@ -9,7 +9,7 @@ spec:
     source:
         repoURL: https://github.com/karansingh-amagi/kubernetes-helper.git
         targetRevision: HEAD
-        path: .
+        path: mongo-argo
     destination:
         server: https://kubernetes.default.svc
         namespace: mongoapp
