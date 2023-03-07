@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-job
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-job
+  template:
+    metadata:
+      labels:
+        app: demo-job
+    spec:
+      containers:
+        - name: demo-job-container
+          image: busybox
+          command: ["echo", "Hello, world!"]
+
